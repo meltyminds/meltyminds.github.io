@@ -1,0 +1,71 @@
+{% extends "main.html" %}
+
+{% block extrahead %}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{{ base_url }}/assets/bootstrap-4-0-0/css/bootstrap.css">
+<script src="{{ base_url }}/assets/bootstrap-4-0-0/js/bootstrap.js"></script>
+<link rel="stylesheet" href="{{ base_url }}/assets/stylesheets/home.css">
+{% endblock %}
+
+{% block tabs %}{% endblock %}
+
+{% block content %}
+  {{ super() }}
+
+  <h3>Information about the system</h3>
+
+  <div class="md-flex__cell md-flex__cell--shrink row">
+    {% block search_box %}
+      <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+      <!-- Search interface -->
+      {% include "partials/search.html" %}
+    {% endblock %}
+  </div>
+
+  <div class="row justify-content-center">
+    <div class="col-sm-4">
+      <a href="/portal/tools/doc/customer/en/explanations/drp-object-lifecycle/drp-object-lifecycle/" class="card bg-primary">
+        <div class="card-body">
+          <h5 class="card-title">Explanations</h5>
+          <p class="card-text text-secondary">Get convenient with general concepts for better understanding of the product.</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <a href="/portal/tools/doc/customer/en/how-to-guides/how-to-investigate-violations/how-to-investigate-violations/" class="card bg-primary">
+        <div class="card-body">
+          <h5 class="card-title">How to guides</h5>
+          <p class="card-text text-secondary">Step-by-step guides for common system operation tasks.</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <a href="/portal/tools/doc/customer/en/interface/user-profile/user-profile/" class="card bg-primary">
+        <div class="card-body">
+          <h5 class="card-title">Interface</h5>
+          <p class="card-text text-secondary">Reference section describing basic interface elements.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-sm-4">
+      <a href="/portal/tools/doc/customer/en/api/api-starting-guide/api-starting-guide/" class="card bg-primary">
+        <div class="card-body">
+          <h5 class="card-title">API</h5>
+          <p class="card-text text-secondary">Basic concepts and ways to use the API to automate key system functions.</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-sm-4">
+      <a href="/portal/tools/doc/customer/en/eula/" class="card bg-primary">
+        <div class="card-body">
+          <h5 class="card-title">EULA</h5>
+          <p class="card-text text-secondary">End-User License Agreement for Group-IB DRP Software.</p>
+        </div>
+      </a>
+    </div>
+  <div>
+  
+{% endblock %}
