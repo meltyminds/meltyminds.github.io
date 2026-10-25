@@ -1,0 +1,1 @@
+import{o,f as a}from"./store.DYxNZjB3.js";const i=document.querySelectorAll("[data-fav-grid] [data-product-id]"),n=document.querySelector("[data-fav-grid]"),r=document.querySelector("[data-fav-empty]");o(()=>{const t=new Set(a.ids());let e=0;i.forEach(d=>{d.hidden=!t.has(d.dataset.productId),d.hidden||(e+=1)}),n.hidden=e===0,r.hidden=e>0});

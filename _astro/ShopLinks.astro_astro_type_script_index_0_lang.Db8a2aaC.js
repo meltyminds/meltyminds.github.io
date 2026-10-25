@@ -1,0 +1,1 @@
+import{o as s,f as a,a as c,c as e}from"./store.DYxNZjB3.js";const r=document.querySelectorAll("[data-shop-count]");s(()=>{const n={cart:c(e.items()),favorites:a.ids().length};r.forEach(t=>{const o=n[t.dataset.shopCount];t.hidden=o===0,t.textContent=o>99?"99+":String(o)})});
